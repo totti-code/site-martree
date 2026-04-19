@@ -50,7 +50,7 @@ export const demoContent: SiteData = {
       titulo: "Setores organizados para facilitar sua compra do início ao fim",
       subtitulo: "Setores e serviços",
       descricao:
-        "Da mercearia ao hortifruti, reunimos categorias essenciais com abastecimento constante e apresentação cuidadosa.",
+        "Da área de perecíveis à limpeza, reunimos categorias essenciais com abastecimento constante e apresentação cuidadosa.",
       imagem_url: null,
       seo_titulo: "Setores | Comercial Martree",
       seo_descricao: "Conheça os setores e serviços da Comercial Martree.",
@@ -99,7 +99,7 @@ export const demoContent: SiteData = {
     {
       id: "banner-2",
       chave: "hero-secundario",
-      titulo: "Hortifruti fresco, mercearia completa e conveniência para a rotina",
+      titulo: "Perecíveis frescos, açougue bem abastecido e conveniência para a rotina",
       subtitulo: "Variedade com qualidade",
       descricao:
         "Uma seleção pensada para atender compras residenciais e demandas do pequeno comércio local.",
@@ -121,7 +121,7 @@ export const demoContent: SiteData = {
       descricao:
         "A loja foi pensada para facilitar a jornada do cliente, com circulação clara, exposição objetiva e reposição frequente.",
       conteudo:
-        "Mercearia e itens básicos\nHortifruti selecionado\nBebidas e conveniência\nLimpeza, higiene e utilidades",
+        "Açougue e carnes frescas\nHortifruti selecionado\nPadaria para o dia a dia\nLimpeza, higiene e utilidades",
       imagem_url: null,
       cta_label: "Ver setores",
       cta_href: "/servicos",
@@ -164,13 +164,13 @@ export const demoContent: SiteData = {
     {
       id: "sec-services-1",
       pagina_chave: "servicos",
-      chave: "mercearia",
-      titulo: "Mercearia e itens essenciais",
-      subtitulo: "Abastecimento diário",
+      chave: "acougue",
+      titulo: "Açougue",
+      subtitulo: "Carnes frescas e cortes variados",
       descricao:
-        "Produtos de alta rotatividade, marcas reconhecidas e variedade para compras rápidas ou completas.",
+        "Setor pensado para oferecer cortes bovinos, suínos e aves com reposição constante e apresentação cuidadosa.",
       conteudo:
-        "Arroz, feijão e farináceos\nEnlatados e conservas\nMassas, molhos e temperos",
+        "Carnes para o dia a dia\nCortes para churrasco\nAves e suínos selecionados",
       imagem_url: null,
       cta_label: "Falar com a loja",
       cta_href: "/contato",
@@ -180,13 +180,13 @@ export const demoContent: SiteData = {
     {
       id: "sec-services-2",
       pagina_chave: "servicos",
-      chave: "hortifruti",
-      titulo: "Hortifruti",
-      subtitulo: "Frescor e seleção",
+      chave: "padaria",
+      titulo: "Padaria",
+      subtitulo: "Produção diária e praticidade",
       descricao:
-        "Frutas, legumes e verduras organizados com foco em qualidade visual, giro e praticidade para o cliente.",
+        "Itens de apoio para café da manhã, lanche e compras rápidas com boa apresentação e giro constante.",
       conteudo:
-        "Reposição frequente\nSeleção cuidadosa\nVariedade para rotina e consumo familiar",
+        "Pães e salgados\nBolos e itens complementares\nProdutos para consumo diário",
       imagem_url: null,
       cta_label: "Solicitar informação",
       cta_href: "/contato",
@@ -196,17 +196,65 @@ export const demoContent: SiteData = {
     {
       id: "sec-services-3",
       pagina_chave: "servicos",
-      chave: "padaria-conveniencia",
-      titulo: "Padaria, bebidas e conveniência",
-      subtitulo: "Complementos da compra",
+      chave: "hortifruti",
+      titulo: "Hortifruti",
+      subtitulo: "Frescor e seleção",
       descricao:
-        "Setores pensados para completar a experiência com praticidade, agilidade e boa apresentação.",
+        "Frutas, legumes e verduras organizados com foco em qualidade visual, giro e praticidade para o cliente.",
       conteudo:
-        "Pães e itens de apoio\nBebidas geladas\nProdutos de compra imediata",
+        "Reposição frequente\nSeleção cuidadosa\nVariedade para rotina e consumo familiar",
       imagem_url: null,
       cta_label: "Ver contato",
       cta_href: "/contato",
       ordem: 3,
+      ativo: true
+    },
+    {
+      id: "sec-services-4",
+      pagina_chave: "servicos",
+      chave: "frios-laticinios",
+      titulo: "Frios e laticínios",
+      subtitulo: "Conservação e variedade",
+      descricao:
+        "Setor abastecido com itens refrigerados, queijos, iogurtes, manteigas e produtos de apoio para a rotina.",
+      conteudo:
+        "Queijos e presuntos\nIogurtes e sobremesas\nLeites e derivados",
+      imagem_url: null,
+      cta_label: "Fale conosco",
+      cta_href: "/contato",
+      ordem: 4,
+      ativo: true
+    },
+    {
+      id: "sec-services-5",
+      pagina_chave: "servicos",
+      chave: "bebidas",
+      titulo: "Bebidas",
+      subtitulo: "Linha completa para a rotina e ocasiões",
+      descricao:
+        "Refrigerantes, águas, sucos e opções para compras do dia a dia ou abastecimento para eventos e encontros.",
+      conteudo:
+        "Bebidas geladas\nÁguas e sucos\nItens para confraternizações",
+      imagem_url: null,
+      cta_label: "Ver contato",
+      cta_href: "/contato",
+      ordem: 5,
+      ativo: true
+    },
+    {
+      id: "sec-services-6",
+      pagina_chave: "servicos",
+      chave: "limpeza-higiene",
+      titulo: "Limpeza e higiene",
+      subtitulo: "Casa e cuidados pessoais",
+      descricao:
+        "Produtos essenciais para manutenção da casa, lavanderia, higiene pessoal e abastecimento da rotina familiar.",
+      conteudo:
+        "Produtos de limpeza\nHigiene pessoal\nItens para lavanderia e casa",
+      imagem_url: null,
+      cta_label: "Solicitar informação",
+      cta_href: "/contato",
+      ordem: 6,
       ativo: true
     },
     {
