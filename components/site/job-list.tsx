@@ -17,7 +17,7 @@ export function JobList({ vagas }: JobListProps) {
               <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-800">
                 {vaga.modalidade}
               </span>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
+              <span className="rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-700">
                 {vaga.localizacao}
               </span>
             </div>
@@ -33,7 +33,7 @@ export function JobList({ vagas }: JobListProps) {
           <div className="flex items-start">
             <a
               href={vaga.link_candidatura ?? "/contato"}
-              className="rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              className="rounded-full bg-accent-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-700"
             >
               Candidatar-se
             </a>

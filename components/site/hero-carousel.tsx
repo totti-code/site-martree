@@ -20,7 +20,7 @@ export function HeroCarousel({
 
   return (
     <section className="relative overflow-hidden border-b border-slate-200 bg-mesh">
-      <div className="absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top,rgba(44,131,120,0.24),transparent_65%)]" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top,rgba(55,141,74,0.22),transparent_65%)]" />
       <div className="mx-auto grid max-w-7xl gap-8 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">
@@ -44,11 +44,11 @@ export function HeroCarousel({
 
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             {[
-              "Planejamento institucional",
-              "Operação com método",
-              "Presença digital profissional"
+              "Hortifruti selecionado",
+              "Mercearia completa",
+              "Conveniência para a rotina"
             ].map((item) => (
-              <Card key={item} className="rounded-[24px] p-5">
+              <Card key={item} className="rounded-[24px] border-brand-100 p-5">
                 <p className="text-sm font-medium text-slate-700">{item}</p>
               </Card>
             ))}
@@ -60,7 +60,7 @@ export function HeroCarousel({
             <img
               src={
                 principal?.imagem_url ??
-                "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+                "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80"
               }
               alt={principal?.titulo ?? paginaInicial.titulo}
               className="h-[420px] w-full rounded-[24px] object-cover"
@@ -70,7 +70,7 @@ export function HeroCarousel({
           <div className="grid gap-5 md:grid-cols-2">
             {secundarios.map((banner) => (
               <Card key={banner.id} className="rounded-[24px] p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-700">
                   {banner.subtitulo}
                 </p>
                 <p className="mt-3 font-display text-2xl text-ink">{banner.titulo}</p>

@@ -25,16 +25,16 @@ export function ContactList({ contatos }: ContactListProps) {
         return (
           <Card key={contato.id} className="rounded-[28px]">
             <div className="flex items-start gap-4">
-              <div className="rounded-2xl bg-brand-50 p-3 text-brand-700">
+              <div className="rounded-2xl bg-accent-50 p-3 text-accent-700">
                 <Icon size={20} />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-700">
                   {contato.rotulo}
                 </p>
                 <a
                   href={contato.href ?? "#"}
-                  className="mt-2 block text-lg font-medium text-ink transition hover:text-brand-700"
+                  className="mt-2 block text-lg font-medium text-ink transition hover:text-accent-700"
                 >
                   {contato.valor}
                 </a>

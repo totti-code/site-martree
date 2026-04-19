@@ -20,7 +20,7 @@ export default async function ContatoPage() {
           <div>
             <SectionHeading
               eyebrow="Contato"
-              title="Canais de relacionamento da empresa"
+              title="Canais de relacionamento da loja"
               description="Telefone, e-mail, endereço e redes sociais também são editáveis pelo painel."
             />
             <div className="mt-10">
@@ -31,17 +31,17 @@ export default async function ContatoPage() {
           <Card className="rounded-[32px]">
             <SectionHeading
               eyebrow="Mensagem"
-              title="Formulário institucional"
+              title="Atendimento institucional"
               description="Este formulário é demonstrativo e pode ser integrado a uma automação ou serviço de e-mail."
             />
             <form className="mt-8 space-y-5">
               <Input placeholder="Nome" />
               <Input type="email" placeholder="E-mail" />
-              <Input placeholder="Empresa" />
-              <Textarea placeholder="Descreva o contexto do projeto" />
+              <Input placeholder="Assunto" />
+              <Textarea placeholder="Descreva sua dúvida, solicitação ou contato comercial" />
               <button
                 type="button"
-                className="rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold text-white"
+                className="rounded-full bg-accent-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-700"
               >
                 Enviar mensagem
               </button>

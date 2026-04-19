@@ -11,20 +11,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#112334",
-        mist: "#EEF3F7",
-        sand: "#F4EEE6",
+        ink: "#163328",
+        mist: "#F4F8F4",
+        sand: "#FFFDFC",
         brand: {
-          50: "#EEF8F7",
-          100: "#D2ECE7",
-          200: "#A8D9D1",
-          300: "#78C1B6",
-          400: "#499F93",
-          500: "#2C8378",
-          600: "#20695F",
-          700: "#195349",
-          800: "#173F38",
-          900: "#163531"
+          50: "#EDF7F0",
+          100: "#D7EEDC",
+          200: "#B3DDBD",
+          300: "#82C28F",
+          400: "#54A866",
+          500: "#378D4A",
+          600: "#2A723B",
+          700: "#225A31",
+          800: "#1D4829",
+          900: "#183C22"
+        },
+        accent: {
+          50: "#FDF2F2",
+          100: "#FBE2E2",
+          200: "#F7C9CD",
+          300: "#ED979F",
+          400: "#E16A74",
+          500: "#C94752",
+          600: "#AB313D",
+          700: "#8D2630",
+          800: "#74222A",
+          900: "#611F26"
         }
       },
       fontFamily: {
@@ -32,10 +44,10 @@ const config: Config = {
         display: ["var(--font-fraunces)"]
       },
       boxShadow: {
-        soft: "0 20px 45px -25px rgba(17, 35, 52, 0.35)"
+        soft: "0 20px 45px -25px rgba(22, 51, 40, 0.28)"
       },
       backgroundImage: {
-        mesh: "radial-gradient(circle at top left, rgba(44,131,120,0.18), transparent 38%), radial-gradient(circle at top right, rgba(17,35,52,0.16), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.96), rgba(238,243,247,0.98))"
+        mesh: "radial-gradient(circle at top left, rgba(55,141,74,0.18), transparent 38%), radial-gradient(circle at top right, rgba(171,49,61,0.12), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,248,244,0.98))"
       }
     }
   },

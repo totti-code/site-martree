@@ -5,7 +5,7 @@ import type { ConfiguracaoEmpresa } from "@/types/site";
 const menu = [
   { href: "/", label: "Home" },
   { href: "/quem-somos", label: "Quem somos" },
-  { href: "/servicos", label: "Serviços" },
+  { href: "/servicos", label: "Setores" },
   { href: "/trabalhe-conosco", label: "Trabalhe conosco" },
   { href: "/contato", label: "Contato" }
 ];
@@ -20,7 +20,7 @@ export function Header({ empresa }: HeaderProps) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex flex-col">
           <span className="font-display text-2xl text-ink">{empresa.nome}</span>
-          <span className="text-xs uppercase tracking-[0.18em] text-brand-700">
+          <span className="text-xs uppercase tracking-[0.18em] text-accent-700">
             {empresa.slogan}
           </span>
         </Link>
@@ -33,7 +33,7 @@ export function Header({ empresa }: HeaderProps) {
           ))}
           <Link
             href="/admin"
-            className="rounded-full border border-slate-200 px-4 py-2 text-ink transition hover:border-brand-500 hover:text-brand-700"
+            className="rounded-full border border-brand-200 px-4 py-2 text-ink transition hover:border-accent-500 hover:text-accent-700"
           >
             Admin
           </Link>

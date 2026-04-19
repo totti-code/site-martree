@@ -40,13 +40,13 @@ export function PageHero({ pagina, ctaHref, ctaLabel }: PageHeroProps) {
               className="h-full min-h-72 w-full rounded-[24px] object-cover"
             />
           ) : (
-            <div className="flex h-full min-h-72 items-end rounded-[24px] bg-[linear-gradient(135deg,#163531,#2C8378,#EEF3F7)] p-8">
+            <div className="flex h-full min-h-72 items-end rounded-[24px] bg-[linear-gradient(135deg,#183C22,#378D4A,#AB313D,#FFFDFC)] p-8">
               <div>
                 <p className="text-sm uppercase tracking-[0.18em] text-white/80">
                   Presença institucional
                 </p>
                 <p className="mt-4 max-w-sm font-display text-3xl text-white">
-                  Conteúdo dinâmico, edição simples e visual corporativo.
+                  Conteúdo dinâmico, gestão simples e visual corporativo para varejo.
                 </p>
               </div>
             </div>

@@ -17,20 +17,20 @@ export function Footer({ empresa, contatos }: FooterProps) {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-200">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent-200">
             Navegação
           </p>
           <div className="mt-4 flex flex-col gap-3 text-sm text-slate-300">
             <Link href="/">Home</Link>
             <Link href="/quem-somos">Quem somos</Link>
-            <Link href="/servicos">Serviços</Link>
+            <Link href="/servicos">Setores</Link>
             <Link href="/trabalhe-conosco">Trabalhe conosco</Link>
             <Link href="/contato">Contato</Link>
           </div>
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-200">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent-200">
             Contatos
           </p>
           <div className="mt-4 space-y-3 text-sm text-slate-300">

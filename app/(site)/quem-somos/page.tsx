@@ -15,7 +15,7 @@ export default async function QuemSomosPage() {
 
   return (
     <>
-      <PageHero pagina={pagina} ctaLabel="Falar com a equipe" ctaHref="/contato" />
+      <PageHero pagina={pagina} ctaLabel="Falar com a loja" ctaHref="/contato" />
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <Card className="rounded-[32px]">

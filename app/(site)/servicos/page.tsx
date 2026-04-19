@@ -10,11 +10,11 @@ export default async function ServicosPage() {
 
   return (
     <>
-      <PageHero pagina={pagina} ctaLabel="Solicitar proposta" ctaHref="/contato" />
+      <PageHero pagina={pagina} ctaLabel="Falar com a loja" ctaHref="/contato" />
       <SectionGrid
-        eyebrow="Serviços"
-        title="Soluções adaptáveis ao estágio da sua operação"
-        description="Cadastre, reorganize e edite essas ofertas diretamente pelo painel administrativo."
+        eyebrow="Setores"
+        title="Áreas da loja pensadas para compras rápidas, completas e bem abastecidas"
+        description="Cadastre, reorganize e edite esses setores diretamente pelo painel administrativo."
         secoes={secoes}
       />
     </>

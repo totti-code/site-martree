@@ -11,7 +11,7 @@ create table if not exists public.configuracoes_empresa (
   logo_url text,
   cta_primario_label text not null default 'Fale conosco',
   cta_primario_href text not null default '/contato',
-  cta_secundario_label text not null default 'Conhecer serviços',
+  cta_secundario_label text not null default 'Conhecer setores',
   cta_secundario_href text not null default '/servicos',
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
@@ -51,7 +51,7 @@ create table if not exists public.secoes (
 create table if not exists public.vagas (
   id uuid primary key default gen_random_uuid(),
   titulo text not null,
-  localizacao text not null default 'Remoto',
+  localizacao text not null default 'Presencial',
   modalidade text not null default 'CLT',
   descricao text not null default '',
   requisitos text not null default '',
@@ -232,57 +232,57 @@ insert into public.configuracoes_empresa (
 )
 values (
   '11111111-1111-1111-1111-111111111111',
-  'Martree Consulting',
-  'Estratégia, operação e tecnologia para empresas que querem crescer com consistência.',
-  'A Martree Consulting apoia organizações na estruturação de processos, posicionamento institucional e evolução digital com foco em resultado sustentável.',
-  'Transformar desafios corporativos em operações mais eficientes, humanas e escaláveis.',
-  'Ser referência em projetos de transformação empresarial com execução simples e alto padrão.',
-  'Clareza, responsabilidade, parceria de longo prazo, consistência operacional e foco em impacto real.',
-  'Falar com a equipe',
+  'Comercial Martree',
+  'Supermercado de confiança com variedade, economia e atendimento próximo.',
+  'A Comercial Martree é um supermercado focado em abastecer famílias e pequenos negócios com produtos selecionados, preços competitivos e uma experiência de compra simples e acolhedora.',
+  'Oferecer compras práticas, variedade de qualidade e atendimento atencioso para o dia a dia da comunidade.',
+  'Ser referência regional em supermercado de proximidade, unindo eficiência operacional, bons preços e relacionamento de confiança.',
+  'Respeito ao cliente, qualidade no abastecimento, transparência, agilidade, organização e compromisso com a comunidade.',
+  'Fale com a loja',
   '/contato',
-  'Conhecer serviços',
+  'Conheça nossos setores',
   '/servicos'
 )
 on conflict (id) do nothing;
 
 insert into public.paginas (id, chave, titulo, subtitulo, descricao, seo_titulo, seo_descricao, ativo)
 values
-  ('20000000-0000-0000-0000-000000000001', 'home', 'Consultoria empresarial com visão estratégica e execução prática', 'Martree Consulting', 'Projetos sob medida para posicionamento institucional, processos, operação comercial e presença digital.', 'Martree Consulting | Consultoria Empresarial', 'Site institucional com conteúdo editável via Supabase.', true),
-  ('20000000-0000-0000-0000-000000000002', 'quem-somos', 'Uma empresa orientada por estrutura, proximidade e entrega', 'Quem somos', 'Construímos relações de longo prazo com empresas que valorizam organização, comunicação clara e evolução contínua.', 'Quem somos | Martree Consulting', 'Conheça a história e os diferenciais da Martree Consulting.', true),
-  ('20000000-0000-0000-0000-000000000003', 'servicos', 'Serviços pensados para empresas em fase de consolidação e crescimento', 'Serviços', 'Atuamos da estratégia ao desdobramento operacional, com soluções adaptadas ao momento do negócio.', 'Serviços | Martree Consulting', 'Consultoria, branding, processos e presença digital.', true),
-  ('20000000-0000-0000-0000-000000000004', 'trabalhe-conosco', 'Faça parte de uma equipe que combina método, colaboração e ambição', 'Trabalhe conosco', 'Buscamos profissionais comprometidos com qualidade, autonomia e construção de valor de longo prazo.', 'Carreiras | Martree Consulting', 'Veja oportunidades abertas na Martree Consulting.', true),
-  ('20000000-0000-0000-0000-000000000005', 'contato', 'Fale com a Martree Consulting', 'Contato', 'Conte um pouco sobre sua empresa e o contexto do projeto. Nosso time retorna com agilidade.', 'Contato | Martree Consulting', 'Entre em contato com a Martree Consulting.', true)
+  ('20000000-0000-0000-0000-000000000001', 'home', 'Qualidade, variedade e economia para a rotina da sua família', 'Comercial Martree', 'Um supermercado preparado para atender compras do dia a dia, reposição da semana e necessidades sazonais com praticidade.', 'Comercial Martree | Supermercado', 'Site institucional de supermercado com conteúdo editável via Supabase.', true),
+  ('20000000-0000-0000-0000-000000000002', 'quem-somos', 'Um supermercado próximo da comunidade e comprometido com confiança', 'Quem somos', 'A Comercial Martree atende clientes com foco em bom abastecimento, cuidado na seleção de produtos e relacionamento duradouro.', 'Quem somos | Comercial Martree', 'Conheça a história e os diferenciais da Comercial Martree.', true),
+  ('20000000-0000-0000-0000-000000000003', 'servicos', 'Setores organizados para facilitar sua compra do início ao fim', 'Setores e serviços', 'Da mercearia ao hortifruti, reunimos categorias essenciais com abastecimento constante e apresentação cuidadosa.', 'Setores | Comercial Martree', 'Conheça os setores e serviços da Comercial Martree.', true),
+  ('20000000-0000-0000-0000-000000000004', 'trabalhe-conosco', 'Venha fazer parte de uma equipe que valoriza atendimento, organização e compromisso', 'Trabalhe conosco', 'Buscamos profissionais dedicados ao varejo alimentar, com foco em colaboração, agilidade e boa experiência para o cliente.', 'Carreiras | Comercial Martree', 'Veja oportunidades abertas na Comercial Martree.', true),
+  ('20000000-0000-0000-0000-000000000005', 'contato', 'Fale com a Comercial Martree', 'Contato', 'Entre em contato para dúvidas, atendimento comercial, parcerias, encomendas e informações da loja.', 'Contato | Comercial Martree', 'Entre em contato com a Comercial Martree.', true)
 on conflict (id) do nothing;
 
 insert into public.banners (id, chave, titulo, subtitulo, descricao, imagem_url, cta_label, cta_href, ordem, ativo)
 values
-  ('30000000-0000-0000-0000-000000000001', 'hero-principal', 'Clareza estratégica para empresas que precisam dar o próximo passo', 'Consultoria empresarial', 'Unimos posicionamento institucional, estrutura operacional e tecnologia para transformar crescimento em consistência.', 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80', 'Solicitar diagnóstico', '/contato', 1, true),
-  ('30000000-0000-0000-0000-000000000002', 'hero-secundario', 'Projetos com direção executiva e implementação objetiva', 'Performance com método', 'Mapeamos prioridades, organizamos comunicação e desenhamos uma operação mais preparada para escalar.', 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80', 'Ver serviços', '/servicos', 2, true)
+  ('30000000-0000-0000-0000-000000000001', 'hero-principal', 'Tudo para o seu dia a dia em um supermercado organizado, acessível e completo', 'Supermercado de proximidade', 'Abastecimento constante, setores bem distribuídos e uma operação pensada para compras rápidas e seguras.', 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80', 'Ver contato', '/contato', 1, true),
+  ('30000000-0000-0000-0000-000000000002', 'hero-secundario', 'Hortifruti fresco, mercearia completa e conveniência para a rotina', 'Variedade com qualidade', 'Uma seleção pensada para atender compras residenciais e demandas do pequeno comércio local.', 'https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=1400&q=80', 'Conhecer setores', '/servicos', 2, true)
 on conflict (id) do nothing;
 
 insert into public.secoes (id, pagina_chave, chave, titulo, subtitulo, descricao, conteudo, imagem_url, cta_label, cta_href, ordem, ativo)
 values
-  ('40000000-0000-0000-0000-000000000001', 'home', 'destaques', 'Atuação integrada para negócios em crescimento', 'Como ajudamos', 'Conectamos estratégia, marca e operação para reduzir improviso e aumentar previsibilidade.', 'Planejamento institucional\nEstruturação de processos\nComunicação corporativa\nProjetos digitais orientados a conversão', null, 'Explorar soluções', '/servicos', 1, true),
-  ('40000000-0000-0000-0000-000000000002', 'home', 'metodo', 'Diagnóstico, plano, implementação e acompanhamento', 'Nossa abordagem', 'Cada projeto parte de uma leitura objetiva do contexto para definir prioridades claras e ações sustentáveis.', '1. Diagnóstico do cenário atual\n2. Priorização de frentes críticas\n3. Execução com entregas objetivas\n4. Evolução contínua baseada em indicadores', null, 'Conhecer a empresa', '/quem-somos', 2, true),
-  ('40000000-0000-0000-0000-000000000003', 'quem-somos', 'historia', 'Uma consultoria criada para simplificar decisões complexas', 'História', 'A Martree nasceu para apoiar empresas que precisam organizar crescimento sem perder identidade e velocidade.', 'Atuamos com proximidade executiva, leitura de cenário e disciplina de implementação. Nosso papel é transformar intenção em processo e processo em resultado.', 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80', null, null, 1, true),
-  ('40000000-0000-0000-0000-000000000004', 'servicos', 'consultoria-estrategica', 'Consultoria estratégica', 'Direção e priorização', 'Alinhamento de posicionamento, objetivos, metas e governança para sustentar crescimento.', 'Workshops executivos\nMapeamento de oportunidades\nPlano de ação trimestral', null, 'Solicitar proposta', '/contato', 1, true),
-  ('40000000-0000-0000-0000-000000000005', 'servicos', 'processos-operacao', 'Processos e operação', 'Eficiência com clareza', 'Estruturação de fluxos, rotinas e responsabilidades para reduzir ruído operacional.', 'Desenho de processos\nPadronização operacional\nIndicadores de acompanhamento', null, 'Falar com especialista', '/contato', 2, true),
-  ('40000000-0000-0000-0000-000000000006', 'servicos', 'presenca-digital', 'Presença digital institucional', 'Marca e credibilidade', 'Sites, estrutura de conteúdo e ativos digitais alinhados ao posicionamento da empresa.', 'Sites institucionais\nConteúdo corporativo\nApoio à comunicação comercial', null, 'Ver contato', '/contato', 3, true),
-  ('40000000-0000-0000-0000-000000000007', 'contato', 'atendimento', 'Atendimento consultivo', 'Vamos conversar', 'Explique o momento do seu negócio, os desafios atuais e o que precisa evoluir.', 'Respondemos solicitações comerciais, parcerias e oportunidades institucionais.', null, null, null, 1, true)
+  ('40000000-0000-0000-0000-000000000001', 'home', 'destaques', 'Compra prática com categorias essenciais bem organizadas', 'Destaques da loja', 'A loja foi pensada para facilitar a jornada do cliente, com circulação clara, exposição objetiva e reposição frequente.', 'Mercearia e itens básicos\nHortifruti selecionado\nBebidas e conveniência\nLimpeza, higiene e utilidades', null, 'Ver setores', '/servicos', 1, true),
+  ('40000000-0000-0000-0000-000000000002', 'home', 'atendimento', 'Atendimento próximo e operação preparada para o dia a dia', 'Nossa proposta', 'Valorizamos agilidade no caixa, reposição eficiente e uma equipe disponível para orientar o cliente quando necessário.', 'Equipe treinada para atendimento\nOrganização de loja e reposição\nFoco em qualidade e validade\nRelacionamento de confiança com o bairro', null, 'Conheça a empresa', '/quem-somos', 2, true),
+  ('40000000-0000-0000-0000-000000000003', 'quem-somos', 'historia', 'Uma operação construída para servir bem e crescer com consistência', 'Nossa história', 'A Comercial Martree nasceu com a proposta de unir abastecimento confiável, atendimento próximo e ambiente de compra agradável.', 'Trabalhamos para ser um supermercado lembrado pela regularidade, pela boa apresentação dos setores e pelo respeito ao cliente em cada etapa da compra.', 'https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=1200&q=80', null, null, 1, true),
+  ('40000000-0000-0000-0000-000000000004', 'servicos', 'mercearia', 'Mercearia e itens essenciais', 'Abastecimento diário', 'Produtos de alta rotatividade, marcas reconhecidas e variedade para compras rápidas ou completas.', 'Arroz, feijão e farináceos\nEnlatados e conservas\nMassas, molhos e temperos', null, 'Falar com a loja', '/contato', 1, true),
+  ('40000000-0000-0000-0000-000000000005', 'servicos', 'hortifruti', 'Hortifruti', 'Frescor e seleção', 'Frutas, legumes e verduras organizados com foco em qualidade visual, giro e praticidade para o cliente.', 'Reposição frequente\nSeleção cuidadosa\nVariedade para rotina e consumo familiar', null, 'Solicitar informação', '/contato', 2, true),
+  ('40000000-0000-0000-0000-000000000006', 'servicos', 'padaria-conveniencia', 'Padaria, bebidas e conveniência', 'Complementos da compra', 'Setores pensados para completar a experiência com praticidade, agilidade e boa apresentação.', 'Pães e itens de apoio\nBebidas geladas\nProdutos de compra imediata', null, 'Ver contato', '/contato', 3, true),
+  ('40000000-0000-0000-0000-000000000007', 'contato', 'atendimento', 'Atendimento comercial e institucional', 'Fale conosco', 'Use este canal para dúvidas gerais, informações sobre a loja, atendimento corporativo e oportunidades de parceria.', 'Respondemos solicitações comerciais, dúvidas sobre funcionamento, contatos institucionais e demandas de fornecedores.', null, null, null, 1, true)
 on conflict (id) do nothing;
 
 insert into public.vagas (id, titulo, localizacao, modalidade, descricao, requisitos, link_candidatura, ordem, ativo)
 values
-  ('50000000-0000-0000-0000-000000000001', 'Analista de Projetos', 'Remoto', 'CLT', 'Atuação no acompanhamento de cronogramas, comunicação com clientes e organização de entregas.', 'Experiência com gestão de projetos\nBoa comunicação escrita\nOrganização e autonomia', 'mailto:careers@martree.com?subject=Vaga%20Analista%20de%20Projetos', 1, true),
-  ('50000000-0000-0000-0000-000000000002', 'Designer de Marca e Conteúdo', 'Híbrido', 'PJ', 'Criação de peças institucionais, páginas e materiais de apoio comercial.', 'Portfólio consistente\nDomínio de design digital\nExperiência com identidade institucional', 'mailto:careers@martree.com?subject=Vaga%20Designer', 2, true)
+  ('50000000-0000-0000-0000-000000000001', 'Operador de Caixa', 'Presencial', 'CLT', 'Atendimento ao cliente, registro de compras, organização do checkout e apoio à rotina da frente de loja.', 'Boa comunicação\nAgilidade no atendimento\nOrganização e atenção', 'mailto:rh@comercialmartree.com?subject=Vaga%20Operador%20de%20Caixa', 1, true),
+  ('50000000-0000-0000-0000-000000000002', 'Repositor de Mercadorias', 'Presencial', 'CLT', 'Reposição de produtos, organização de gôndolas, conferência de validade e apoio ao abastecimento da loja.', 'Comprometimento com rotina operacional\nBoa disposição física\nAtenção à organização e limpeza', 'mailto:rh@comercialmartree.com?subject=Vaga%20Repositor%20de%20Mercadorias', 2, true)
 on conflict (id) do nothing;
 
 insert into public.contatos (id, tipo, rotulo, valor, href, icone, ordem, ativo)
 values
   ('60000000-0000-0000-0000-000000000001', 'telefone', 'Telefone', '+55 (11) 4000-1234', 'tel:+551140001234', 'phone', 1, true),
-  ('60000000-0000-0000-0000-000000000002', 'email', 'E-mail', 'contato@martree.com', 'mailto:contato@martree.com', 'mail', 2, true),
-  ('60000000-0000-0000-0000-000000000003', 'endereco', 'Endereço', 'Av. Brigadeiro Faria Lima, 1500 - São Paulo, SP', 'https://maps.google.com/?q=Faria+Lima+1500+Sao+Paulo', 'map-pin', 3, true),
-  ('60000000-0000-0000-0000-000000000004', 'linkedin', 'LinkedIn', 'linkedin.com/company/martree', 'https://linkedin.com/company/martree', 'linkedin', 4, true)
+  ('60000000-0000-0000-0000-000000000002', 'email', 'E-mail', 'contato@comercialmartree.com', 'mailto:contato@comercialmartree.com', 'mail', 2, true),
+  ('60000000-0000-0000-0000-000000000003', 'endereco', 'Endereço', 'Av. Principal, 2500 - São Paulo, SP', 'https://maps.google.com/?q=Av+Principal+2500+Sao+Paulo', 'map-pin', 3, true),
+  ('60000000-0000-0000-0000-000000000004', 'instagram', 'Instagram', '@comercialmartree', 'https://instagram.com/comercialmartree', 'globe', 4, true)
 on conflict (id) do nothing;
 
 insert into storage.buckets (id, name, public)

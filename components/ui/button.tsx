@@ -11,9 +11,9 @@ const variants = {
   primary:
     "bg-brand-600 text-white hover:bg-brand-700 disabled:bg-brand-300",
   secondary:
-    "bg-white text-ink ring-1 ring-slate-200 hover:bg-slate-50 disabled:text-slate-400",
+    "bg-white text-ink ring-1 ring-brand-200 hover:bg-brand-50 disabled:text-slate-400",
   ghost: "bg-transparent text-ink hover:bg-slate-100",
-  danger: "bg-rose-600 text-white hover:bg-rose-700 disabled:bg-rose-300"
+  danger: "bg-accent-600 text-white hover:bg-accent-700 disabled:bg-accent-300"
 };
 
 export function Button({

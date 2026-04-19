@@ -15,8 +15,8 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Martree Consulting",
-  description: "Site institucional com painel administrativo e Supabase."
+  title: "Comercial Martree",
+  description: "Site institucional de supermercado com painel administrativo e Supabase."
 };
 
 export default async function RootLayout({
