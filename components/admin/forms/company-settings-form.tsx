@@ -62,7 +62,7 @@ export function CompanySettingsForm({
         <div className="grid gap-5 md:grid-cols-2">
           <div>
             <label className="mb-2 block text-sm font-medium text-slate-700">
-              Nome da empresa
+              Nome da loja
             </label>
             <Input
               value={form.nome}
@@ -84,7 +84,7 @@ export function CompanySettingsForm({
 
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Resumo institucional
+            Resumo da loja
           </label>
           <Textarea
             value={form.resumo}
@@ -165,7 +165,7 @@ export function CompanySettingsForm({
 
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Logo ou imagem institucional
+            Logo ou imagem da loja
           </label>
           <Input
             value={form.logo_url ?? ""}
@@ -192,7 +192,7 @@ export function CompanySettingsForm({
         {status ? <p className="text-sm text-slate-600">{status}</p> : null}
 
         <Button type="submit" disabled={disabled || saving || uploading}>
-          {saving || uploading ? "Salvando..." : "Salvar empresa"}
+          {saving || uploading ? "Salvando..." : "Salvar loja"}
         </Button>
       </form>
     </Card>

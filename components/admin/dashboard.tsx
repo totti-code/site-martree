@@ -33,10 +33,10 @@ export function Dashboard({ initialData, supabaseReady }: DashboardProps) {
       <section id="empresa" className="space-y-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">
-            Empresa
+            Loja
           </p>
           <h2 className="mt-2 font-display text-3xl text-ink">
-            Informações institucionais
+            Informações da loja
           </h2>
         </div>
         <CompanySettingsForm

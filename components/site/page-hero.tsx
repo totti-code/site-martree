@@ -43,10 +43,10 @@ export function PageHero({ pagina, ctaHref, ctaLabel }: PageHeroProps) {
             <div className="flex h-full min-h-72 items-end rounded-[24px] bg-[linear-gradient(135deg,#183C22,#378D4A,#AB313D,#FFFDFC)] p-8">
               <div>
                 <p className="text-sm uppercase tracking-[0.18em] text-white/80">
-                  Presença institucional
+                  Loja em destaque
                 </p>
                 <p className="mt-4 max-w-sm font-display text-3xl text-white">
-                  Conteúdo dinâmico, gestão simples e visual corporativo para varejo.
+                  Conteúdo dinâmico, gestão simples e visual profissional para supermercado.
                 </p>
               </div>
             </div>

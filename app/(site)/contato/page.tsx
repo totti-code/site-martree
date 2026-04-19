@@ -31,7 +31,7 @@ export default async function ContatoPage() {
           <Card className="rounded-[32px]">
             <SectionHeading
               eyebrow="Mensagem"
-              title="Atendimento institucional"
+              title="Atendimento da loja"
               description="Este formulário é demonstrativo e pode ser integrado a uma automação ou serviço de e-mail."
             />
             <form className="mt-8 space-y-5">

@@ -58,7 +58,7 @@ export function LoginForm() {
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          placeholder="admin@empresa.com"
+          placeholder="admin@comercialmartree.com"
           disabled={!hasSupabaseEnv}
         />
       </div>

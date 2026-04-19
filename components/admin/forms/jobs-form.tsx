@@ -39,7 +39,7 @@ export function JobsForm({ initialValue, disabled = false }: JobsFormProps) {
         modalidade: "CLT",
         descricao: "Descrição da vaga",
         requisitos: "Requisitos da vaga",
-        link_candidatura: "mailto:rh@empresa.com",
+        link_candidatura: "mailto:rh@comercialmartree.com",
         ordem: current.length + 1,
         ativo: true
       }

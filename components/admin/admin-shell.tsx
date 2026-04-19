@@ -7,7 +7,7 @@ interface AdminShellProps {
 }
 
 const menu = [
-  { href: "#empresa", label: "Empresa" },
+  { href: "#empresa", label: "Loja" },
   { href: "#paginas", label: "Páginas" },
   { href: "#secoes", label: "Seções" },
   { href: "#banners", label: "Banners" },
@@ -22,7 +22,7 @@ export function AdminShell({ children }: AdminShellProps) {
         <aside className="h-fit rounded-[32px] bg-ink p-6 text-white shadow-soft lg:sticky lg:top-8">
           <p className="font-display text-3xl">Admin</p>
           <p className="mt-3 text-sm leading-7 text-slate-300">
-            Painel de conteúdo conectado ao Supabase.
+            Painel de conteúdo da loja conectado ao Supabase.
           </p>
 
           <nav className="mt-8 flex flex-col gap-2">

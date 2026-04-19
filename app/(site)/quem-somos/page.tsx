@@ -21,7 +21,7 @@ export default async function QuemSomosPage() {
           <Card className="rounded-[32px]">
             <SectionHeading
               eyebrow="Essência"
-              title="O que sustenta a atuação da empresa"
+              title="O que sustenta a identidade da loja"
               description={empresa.resumo}
             />
             <div className="mt-8 grid gap-6 md:grid-cols-3">

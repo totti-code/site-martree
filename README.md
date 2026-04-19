@@ -1,6 +1,6 @@
-# Site institucional com Next.js, Tailwind e Supabase
+# Site do supermercado Comercial Martree
 
-Projeto base para site institucional com área administrativa editável em `/admin`, usando:
+Projeto base para site apresentativo de supermercado com área administrativa editável em `/admin`, usando:
 
 - `Next.js` com App Router
 - `React`
@@ -13,13 +13,13 @@ Projeto base para site institucional com área administrativa editável em `/adm
 - Site público com páginas:
   - `Home`
   - `Quem somos`
-  - `Serviços`
+  - `Setores`
   - `Trabalhe conosco`
   - `Contato`
 - Painel administrativo protegido por login em `/admin`
 - Edição de:
-  - informações da empresa
-  - páginas institucionais
+  - informações da loja
+  - páginas do site
   - seções de conteúdo
   - banners da home
   - vagas
@@ -110,7 +110,7 @@ Para subir no GitHub:
 ```bash
 git init
 git add .
-git commit -m "feat: projeto institucional com admin e supabase"
+git commit -m "feat: site do supermercado comercial martree"
 git branch -M main
 git remote add origin https://github.com/seu-usuario/seu-repositorio.git
 git push -u origin main
@@ -122,8 +122,6 @@ git push -u origin main
 2. Importe o repositório na Vercel.
 3. Configure as mesmas variáveis de ambiente do `.env.local`.
 4. Faça o deploy.
-
-Se quiser usar o domínio principal na Vercel, o fluxo já está pronto para isso sem ajustes extras no código.
 
 ## 8. Observações de manutenção
 

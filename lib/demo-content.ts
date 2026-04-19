@@ -139,7 +139,7 @@ export const demoContent: SiteData = {
       conteudo:
         "Equipe treinada para atendimento\nOrganização de loja e reposição\nFoco em qualidade e validade\nRelacionamento de confiança com o bairro",
       imagem_url: null,
-      cta_label: "Conheça a empresa",
+      cta_label: "Conheça a loja",
       cta_href: "/quem-somos",
       ordem: 2,
       ativo: true
@@ -213,10 +213,10 @@ export const demoContent: SiteData = {
       id: "sec-contact-1",
       pagina_chave: "contato",
       chave: "atendimento",
-      titulo: "Atendimento comercial e institucional",
+      titulo: "Atendimento da loja",
       subtitulo: "Fale conosco",
       descricao:
-        "Use este canal para dúvidas gerais, informações sobre a loja, atendimento corporativo e oportunidades de parceria.",
+        "Use este canal para dúvidas gerais, horários, atendimento da loja, parcerias e informações para fornecedores.",
       conteudo:
         "Respondemos solicitações comerciais, dúvidas sobre funcionamento, contatos institucionais e demandas de fornecedores.",
       imagem_url: null,
